@@ -21,29 +21,21 @@ function useContainer() {
     AsyncStorage.getItem('url').then(async url => {
       if (isEmpty(url)) {
         loadFire = await getUrl();
-        CarrierInfo.mobileNetworkOperator()
-          .then(result => {
-            if (deviceInfo.google || isEmpty(loadFire)) {
-              setConditionForPlug(true);
-            } else {
-              setConditionForPlug(false);
-            }
-          })
-          .catch(() => setConditionForPlug(true));
+        if (deviceInfo.google || isEmpty(loadFire)) {
+          setConditionForPlug(true);
+        } else {
+          setConditionForPlug(false);
+        }
         setUri(loadFire);
         await setLoader(false);
         return;
       }
       await setUri(url);
-      CarrierInfo.mobileNetworkOperator()
-        .then(result => {
-          if (deviceInfo.google || isEmpty(uri)) {
-            setConditionForPlug(true);
-          } else {
-            setConditionForPlug(false);
-          }
-        })
-        .catch(() => setConditionForPlug(true));
+      if (deviceInfo.google || isEmpty(uri)) {
+        setConditionForPlug(true);
+      } else {
+        setConditionForPlug(false);
+      }
       await setLoader(false);
     });
   }
