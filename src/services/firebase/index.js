@@ -7,6 +7,7 @@ async function getUrl() {
     await remoteConfig().fetchAndActivate();
     const url = remoteConfig().getValue('url').asString();
     if (!isEmpty(url)) {
+      console.log(url);
       await AsyncStorage.setItem('url', url);
     }
     return url;

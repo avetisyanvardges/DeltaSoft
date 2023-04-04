@@ -27,6 +27,7 @@ export const Colors = {
 export const BackgroundColors = {
   black: '#181a20',
   white: '#ffffff',
+  blue: '#0A2540',
 };
 
 export const Shadow = {

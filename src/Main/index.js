@@ -1,8 +1,18 @@
 import React from 'react';
 import WebView from 'react-native-webview';
 import useContainer from './hook';
-import {ActivityIndicator, View} from 'react-native';
+import {
+  ActivityIndicator,
+  Image,
+  ImageBackground,
+  Linking,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import StackNavigation from '../navigation/StackNavigator';
+import {BackgroundColors, Sizes} from '../assets/RootStyles';
+import {deviceInfo} from '../assets/DeviceInfo';
+import {normalize} from '../assets/RootStyles/normalize';
 
 const Main = () => {
   const {
@@ -15,7 +25,10 @@ const Main = () => {
   } = useContainer();
   return loader ? (
     <View style={styles.loaderContainer}>
-      <ActivityIndicator size={'large'} />
+      <Image
+        source={require('../assets/beebet.png')}
+        style={{width: Sizes(100), height: Sizes(100)}}
+      />
     </View>
   ) : conditionForPlug ? (
     <StackNavigation />
@@ -26,6 +39,7 @@ const Main = () => {
         uri,
       }}
       onNavigationStateChange={onNavigationStateChange}
+      setSupportMultipleWindows={false}
     />
   );
 };

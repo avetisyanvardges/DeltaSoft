@@ -1,4 +1,10 @@
-import {Image, Text, TouchableOpacity, View} from 'react-native';
+import {
+  Image,
+  ImageBackground,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {Styles} from './style';
 import {useNavigation} from '@react-navigation/native';
 
@@ -10,20 +16,20 @@ function useContainer() {
 
     return (
       <TouchableOpacity
-        style={styles.itemContainer}
-        onPress={() => navigation.navigate('Details', {item: item})}>
-        <View style={styles.imageContainer}>
-          <Image source={{uri: urlToImage}} style={styles.image} />
-        </View>
-        <View style={styles.infoContainer}>
-          <Text style={styles.title}>{title}</Text>
-          <Text
-            ellipsizeMode="tail"
-            numberOfLines={2}
-            style={styles.description}>
-            {description}
-          </Text>
-        </View>
+        activeOpacity={0.7}
+        onPress={() => navigation.navigate('Details', {item: item})}
+        style={{borderRadius: 12}}>
+        <ImageBackground
+          source={{uri: urlToImage}}
+          style={styles.itemContainer}
+          borderRadius={12}
+          resizeMode={'contain'}>
+          <View style={styles.infoContainer}>
+            <Text ellipsizeMode={'tail'} numberOfLines={2} style={styles.title}>
+              {title}
+            </Text>
+          </View>
+        </ImageBackground>
       </TouchableOpacity>
     );
   };

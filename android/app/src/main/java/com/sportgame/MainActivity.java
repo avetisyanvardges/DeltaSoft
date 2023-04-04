@@ -1,4 +1,4 @@
-package rejoice.stake.heal;
+package beebet.mobile.sports;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

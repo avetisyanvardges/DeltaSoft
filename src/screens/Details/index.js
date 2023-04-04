@@ -1,7 +1,7 @@
 import React from 'react';
 import {Image, Text, View} from 'react-native';
 import {SharedElement} from 'react-native-shared-element';
-import {Colors, Shadow, Sizes} from '../../assets/RootStyles';
+import {BackgroundColors, Colors, Shadow, Sizes} from '../../assets/RootStyles';
 
 function Details({route}) {
   const {
@@ -11,29 +11,28 @@ function Details({route}) {
     <View
       style={{
         flex: 1,
-        margin: Sizes(10),
         ...Shadow,
-        backgroundColor: Colors.white,
-        borderRadius: Sizes(30),
+        shadowColor: 'rgba(255,255,255,.6)',
+        backgroundColor: BackgroundColors.blue,
       }}>
       <SharedElement id={publishedAt}>
         <Image
           style={{
             width: '100%',
             height: Sizes(300),
-            borderTopLeftRadius: Sizes(30),
-            borderTopRightRadius: Sizes(30),
+            borderBottomLeftRadius: Sizes(20),
+            borderBottomRightRadius: Sizes(20),
           }}
           source={{
             uri: urlToImage,
           }}
         />
-        <View style={{marginHorizontal: Sizes(5)}}>
+        <View style={{marginHorizontal: Sizes(10)}}>
           <Text
             style={{
               fontSize: Sizes(18),
               fontWeight: 'bold',
-              color: Colors.black,
+              color: '#F4EFF4',
               marginTop: Sizes(5),
             }}>
             {title}
@@ -42,14 +41,14 @@ function Details({route}) {
             style={{
               marginTop: Sizes(10),
               fontSize: Sizes(16),
-              color: Colors.black,
+              color: '#8E9BA7',
             }}>
             {description}
           </Text>
           <Text
             style={{
               fontSize: Sizes(16),
-              color: Colors.black,
+              color: '#8E9BA7',
             }}>
             {content}
           </Text>

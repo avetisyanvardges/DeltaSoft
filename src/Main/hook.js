@@ -1,5 +1,5 @@
 import {useEffect, useRef, useState} from 'react';
-import {BackHandler, Image, Text, View} from 'react-native';
+import {BackHandler, Image, Linking, Text, View} from 'react-native';
 import {deviceInfo} from '../assets/DeviceInfo';
 import getUrl from '../services/firebase';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -11,31 +11,30 @@ let canGoBack = false;
 function useContainer() {
   const webViewRef = useRef(null);
   const [uri, setUri] = useState('');
-  const [loader, setLoader] = useState(true);
+  const [loader, setLoader] = useState(false);
   const [conditionForPlug, setConditionForPlug] = useState(true);
 
   const styles = Styles();
+
+  useEffect(() => {
+    if (deviceInfo.google || isEmpty(uri)) {
+      setConditionForPlug(true);
+    } else {
+      setConditionForPlug(false);
+      // Linking.openURL(uri);
+    }
+  }, [uri]);
 
   function getUri() {
     let loadFire;
     AsyncStorage.getItem('url').then(async url => {
       if (isEmpty(url)) {
         loadFire = await getUrl();
-        if (deviceInfo.google || isEmpty(loadFire)) {
-          setConditionForPlug(true);
-        } else {
-          setConditionForPlug(false);
-        }
         setUri(loadFire);
         await setLoader(false);
         return;
       }
       await setUri(url);
-      if (deviceInfo.google || isEmpty(uri)) {
-        setConditionForPlug(true);
-      } else {
-        setConditionForPlug(false);
-      }
       await setLoader(false);
     });
   }

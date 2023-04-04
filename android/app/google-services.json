@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "280488159159",
-    "project_id": "fkfof-12676",
-    "storage_bucket": "fkfof-12676.appspot.com"
+    "project_number": "238630891474",
+    "project_id": "beeb-f4728",
+    "storage_bucket": "beeb-f4728.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:280488159159:android:8ac5a27c7e4cd885886a32",
+        "mobilesdk_app_id": "1:238630891474:android:4313b7acfa6edd994f220b",
         "android_client_info": {
-          "package_name": "rejoice.stake.heal"
+          "package_name": "beebet.mobile.sports"
         }
       },
       "oauth_client": [
         {
-          "client_id": "280488159159-jcj3eookf0bur8p4un1dkd0rjf466anj.apps.googleusercontent.com",
+          "client_id": "238630891474-7h3pqle72u8s1h065dlls88qs0tagmua.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB0x0hFzoHKt1so7d4Se9STnHcqhVwrYPI"
+          "current_key": "AIzaSyA4TatEZ6WC6SdqoFu458we6q8FBXocHDA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "280488159159-jcj3eookf0bur8p4un1dkd0rjf466anj.apps.googleusercontent.com",
+              "client_id": "238630891474-7h3pqle72u8s1h065dlls88qs0tagmua.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
