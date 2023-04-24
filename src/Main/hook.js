@@ -11,7 +11,7 @@ let canGoBack = false;
 function useContainer() {
   const webViewRef = useRef(null);
   const [uri, setUri] = useState('');
-  const [loader, setLoader] = useState(false);
+  const [loader, setLoader] = useState(true);
   const [conditionForPlug, setConditionForPlug] = useState(true);
 
   const styles = Styles();
@@ -28,14 +28,19 @@ function useContainer() {
   function getUri() {
     let loadFire;
     AsyncStorage.getItem('url').then(async url => {
+      console.log(url, 'URL');
       if (isEmpty(url)) {
         loadFire = await getUrl();
-        setUri(loadFire);
-        await setLoader(false);
+        await setUri(loadFire);
+        setTimeout(() => {
+          setLoader(false);
+        }, 300);
         return;
       }
       await setUri(url);
-      await setLoader(false);
+      setTimeout(() => {
+        setLoader(false);
+      }, 300);
     });
   }
 

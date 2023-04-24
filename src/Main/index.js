@@ -23,6 +23,8 @@ const Main = () => {
     conditionForPlug,
     onNavigationStateChange,
   } = useContainer();
+  console.log(loader, 'LOADER');
+  console.log(conditionForPlug, 'LOADER');
   return loader ? (
     <View style={styles.loaderContainer}>
       <Image
