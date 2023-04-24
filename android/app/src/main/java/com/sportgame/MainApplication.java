@@ -1,4 +1,4 @@
-package beebet.mobile.sports;
+package kansino.eceltones;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

@@ -94,9 +94,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "beebet.mobile.sports"
+    namespace "kansino.eceltones"
     defaultConfig {
-        applicationId "beebet.mobile.sports"
+        applicationId "kansino.eceltones"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

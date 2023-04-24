@@ -1,4 +1,4 @@
-package beebet.mobile.sports;
+package kansino.eceltones;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

@@ -9,6 +9,7 @@ import Champions from '../screens/Champions';
 import Biography from '../screens/Champions/Biography';
 import DisplayScreen from '../screens/DisplayScreen';
 import QuizScreen from '../screens/Quizz';
+import Diamonds from '../screens/Diamond';
 
 const Stack = createSharedElementStackNavigator();
 const StackNavigation = () => {
@@ -16,7 +17,7 @@ const StackNavigation = () => {
     <NavigationContainer ref={navigationRef}>
       <Stack.Navigator
         screenOptions={{headerShown: false}}
-        initialRouteName={'Quiz'}>
+        initialRouteName={'Diamonds'}>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen
           name="Details"
@@ -29,6 +30,7 @@ const StackNavigation = () => {
         <Stack.Screen name="Champions" component={Champions} />
         <Stack.Screen name="Biography" component={Biography} />
         <Stack.Screen name="Quiz" component={QuizScreen} />
+        <Stack.Screen name="Diamonds" component={Diamonds} />
       </Stack.Navigator>
     </NavigationContainer>
   );
