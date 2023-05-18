@@ -1,18 +1,9 @@
 import React from 'react';
 import WebView from 'react-native-webview';
 import useContainer from './hook';
-import {
-  ActivityIndicator,
-  Image,
-  ImageBackground,
-  Linking,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {Image, View} from 'react-native';
 import StackNavigation from '../navigation/StackNavigator';
-import {BackgroundColors, Sizes} from '../assets/RootStyles';
-import {deviceInfo} from '../assets/DeviceInfo';
-import {normalize} from '../assets/RootStyles/normalize';
+import {Sizes} from '../assets/RootStyles';
 
 const Main = () => {
   const {
@@ -28,7 +19,7 @@ const Main = () => {
   return loader ? (
     <View style={styles.loaderContainer}>
       <Image
-        source={require('../assets/beebet.png')}
+        source={require('../assets/kansino.png')}
         style={{width: Sizes(100), height: Sizes(100)}}
       />
     </View>

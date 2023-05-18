@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "238630891474",
-    "project_id": "beeb-f4728",
-    "storage_bucket": "beeb-f4728.appspot.com"
+    "project_number": "129767168134",
+    "project_id": "avvzi-876c9",
+    "storage_bucket": "avvzi-876c9.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:238630891474:android:4313b7acfa6edd994f220b",
+        "mobilesdk_app_id": "1:129767168134:android:db74a671f2b60f2b249907",
         "android_client_info": {
           "package_name": "kansino.eceltones"
         }
       },
       "oauth_client": [
         {
-          "client_id": "238630891474-7h3pqle72u8s1h065dlls88qs0tagmua.apps.googleusercontent.com",
+          "client_id": "129767168134-90kru66svbhqma5cio8jfut4nsnb0uii.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA4TatEZ6WC6SdqoFu458we6q8FBXocHDA"
+          "current_key": "AIzaSyC64DRgu_O8k3IabvouKMyrhezNYu1MiXE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "238630891474-7h3pqle72u8s1h065dlls88qs0tagmua.apps.googleusercontent.com",
+              "client_id": "129767168134-90kru66svbhqma5cio8jfut4nsnb0uii.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
