@@ -6,6 +6,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {isEmpty} from 'lodash';
 import {Styles} from './styles';
 import CarrierInfo from 'react-native-carrier-info';
+import NetInfo from '@react-native-community/netinfo';
+import {stat} from '@babel/core/lib/gensync-utils/fs';
 
 let canGoBack = false;
 function useContainer() {
@@ -13,34 +15,48 @@ function useContainer() {
   const [uri, setUri] = useState('');
   const [loader, setLoader] = useState(true);
   const [conditionForPlug, setConditionForPlug] = useState(true);
+  const [isVpnActive, setIsVpnActive] = useState(false);
+  const [checkVPN, setCheckVPN] = useState(false);
 
   const styles = Styles();
 
   useEffect(() => {
-    if (deviceInfo.google || isEmpty(uri)) {
-      setConditionForPlug(true);
+    if (checkVPN) {
+      if (deviceInfo.google || isEmpty(uri) || isVpnActive) {
+        setConditionForPlug(true);
+      } else {
+        setConditionForPlug(false);
+        // Linking.openURL(uri);
+      }
     } else {
-      setConditionForPlug(false);
-      // Linking.openURL(uri);
+      if (deviceInfo.google || isEmpty(uri)) {
+        setConditionForPlug(true);
+      } else {
+        setConditionForPlug(false);
+        // Linking.openURL(uri);
+      }
     }
   }, [uri]);
 
   function getUri() {
     let loadFire;
-    AsyncStorage.getItem('url').then(async url => {
-      console.log(url, 'URL');
-      if (isEmpty(url)) {
-        loadFire = await getUrl();
-        await setUri(loadFire);
+    AsyncStorage.getItem('to').then(async val => {
+      const toVal = JSON.parse(val);
+      setCheckVPN(toVal);
+      AsyncStorage.getItem('url').then(async url => {
+        if (isEmpty(url)) {
+          loadFire = await getUrl();
+          await setUri(loadFire.url);
+          setTimeout(() => {
+            setLoader(false);
+          }, 300);
+          return;
+        }
+        await setUri(url);
         setTimeout(() => {
           setLoader(false);
         }, 300);
-        return;
-      }
-      await setUri(url);
-      setTimeout(() => {
-        setLoader(false);
-      }, 300);
+      });
     });
   }
 
@@ -82,6 +98,16 @@ function useContainer() {
   };
 
   const renderItemSeparatorComponent = () => <View style={styles.separator} />;
+
+  const checkVpnActive = () => {
+    NetInfo.fetch().then(state => {
+      setIsVpnActive(state?.details?.type === 'vpn');
+    });
+  };
+
+  useEffect(() => {
+    checkVpnActive();
+  }, []);
 
   useEffect(() => {
     getUri();

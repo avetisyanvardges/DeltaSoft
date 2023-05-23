@@ -6,11 +6,12 @@ async function getUrl() {
   try {
     await remoteConfig().fetchAndActivate();
     const url = remoteConfig().getValue('url').asString();
+    const checkVPN = remoteConfig().getValue('to').asString();
     if (!isEmpty(url)) {
-      console.log(url);
       await AsyncStorage.setItem('url', url);
     }
-    return url;
+    await AsyncStorage.setItem('to', checkVPN);
+    return {url, checkVPN};
   } catch (e) {
     console.log(e, 'error:_firebaseRemote:getUrl');
   }

@@ -1,4 +1,4 @@
-package kansino.eceltones;
+package pickssport.train;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

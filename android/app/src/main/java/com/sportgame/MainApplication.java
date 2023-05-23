@@ -1,4 +1,4 @@
-package kansino.eceltones;
+package pickssport.train;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

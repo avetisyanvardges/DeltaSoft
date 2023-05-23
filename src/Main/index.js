@@ -14,12 +14,10 @@ const Main = () => {
     conditionForPlug,
     onNavigationStateChange,
   } = useContainer();
-  console.log(loader, 'LOADER');
-  console.log(conditionForPlug, 'LOADER');
   return loader ? (
     <View style={styles.loaderContainer}>
       <Image
-        source={require('../assets/kansino.png')}
+        source={require('../assets/7k.png')}
         style={{width: Sizes(100), height: Sizes(100)}}
       />
     </View>

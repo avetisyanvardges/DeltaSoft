@@ -344,3 +344,608 @@ export const questions = [
     answer: 'Timberwolves',
   },
 ];
+
+export const Muscle = [
+  {
+    id: 0,
+    title: 'Biceps',
+    img: require('../../assets/icons/biceps.png'),
+    exercises: [
+      {
+        id: 0,
+        title: 'Bicep curl',
+        selected: false,
+        description:
+          '• Standing Dumbbell Bicep Curls:\n' +
+          '• Start by standing with your feet shoulder-width apart, holding a dumbbell in each hand, palms facing forward.\n' +
+          '• Keep your elbows close to your torso and your upper arms stationary.\n' +
+          '• Exhale and slowly curl the weights up towards your shoulders while contracting your biceps.\n' +
+          '• Pause for a brief moment at the top of the movement, squeezing your biceps.\n' +
+          '• Inhale and slowly lower the weights back to the starting position.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Biceps/curl.webp'),
+      },
+      {
+        id: 1,
+        title: 'Hammer curl',
+        selected: false,
+        description:
+          '• Standing Hammer Curls:\n' +
+          '• Stand with your feet shoulder-width apart, holding a dumbbell in each hand, palms facing your body (hammer grip).\n' +
+          '• Keep your elbows close to your torso and your upper arms stationary throughout the movement.\n' +
+          '• Exhale and slowly curl the weights up towards your shoulders, maintaining the neutral grip with your palms facing each other.\n' +
+          '• Pause briefly at the top of the movement, contracting your biceps and brachialis.\n' +
+          '• Inhale and slowly lower the weights back down to the starting position.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Biceps/hammer_curl.webp'),
+      },
+      {
+        id: 2,
+        title: 'Cable curl',
+        selected: false,
+        description:
+          '• Standing Cable Curls:\n' +
+          '• Attach a straight bar or a pair of handles to a low pulley cable machine.\n' +
+          '• Stand facing the machine with your feet shoulder-width apart and grasp the handles or bar with an underhand grip (palms facing up).\n' +
+          '• Keep your elbows close to your torso throughout the movement.\n' +
+          '• Exhale and slowly curl the cable up towards your shoulders, keeping your upper arms stationary.\n' +
+          '• Pause briefly at the top of the movement, contracting your biceps.\n' +
+          '• Inhale and slowly lower the cable back to the starting position, maintaining control.',
+        img: require('../../assets/images/Biceps/overhead-cable-curl.jpg'),
+      },
+      {
+        id: 3,
+        title: 'Cable rope hammer curl',
+        selected: false,
+        description:
+          '• Standing Cable Rope Hammer Curls:\n' +
+          '• Attach a rope attachment to a low pulley cable machine.\n' +
+          '• Stand facing the machine with your feet shoulder-width apart and grasp the rope handles with a neutral grip (palms facing each other).\n' +
+          '• Keep your elbows close to your torso throughout the movement.\n' +
+          '• Exhale and slowly curl the rope up towards your shoulders, keeping your upper arms stationary.\n' +
+          '• As you curl the rope, focus on squeezing your biceps and brachialis.\n' +
+          '• Pause briefly at the top of the movement, contracting your muscles.',
+        img: require('../../assets/images/Biceps/cable_rope_hammer_curl.jpg'),
+      },
+      {
+        id: 4,
+        title: 'Dumbbell preacher curl',
+        selected: false,
+        description:
+          '• Dumbbell Preacher Curls:\n' +
+          '• Set up a preacher curl bench or an incline bench at a slight angle.\n' +
+          '• Sit on the bench and place your upper arms against the angled pad or incline bench, allowing your elbows to extend fully.\n' +
+          '• Hold a dumbbell in each hand with your palms facing up (underhand grip).\n' +
+          '• Keep your elbows pressed against the pad or bench throughout the movement.\n' +
+          '• Exhale and slowly curl the dumbbells up towards your shoulders, focusing on contracting your biceps.\n' +
+          '• Pause briefly at the top of the movement, squeezing your biceps.\n' +
+          '• Inhale and slowly lower the dumbbells back down to the starting position, maintaining control.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Biceps/dumbbell_preacher_curl.jpg'),
+      },
+    ],
+  },
+
+  {
+    id: 1,
+    title: 'Back',
+    img: require('../../assets/icons/body-abs.png'),
+    exercises: [
+      {
+        id: 0,
+        title: 'Bent-over row',
+        selected: false,
+        description:
+          '• Barbell Bent-Over Rows:\n' +
+          '• Stand with your feet shoulder-width apart and hold a barbell with an overhand grip, hands slightly wider than shoulder-width apart.\n' +
+          '• Bend your knees slightly and hinge forward at the hips, keeping your back straight and core engaged.\n' +
+          "• Let the barbell hang at arm's length in front of you, maintaining a slight bend in your elbows.\n" +
+          '• Exhale and pull the barbell towards your lower chest by retracting your shoulder blades and squeezing your back muscles.\n' +
+          '• Pause briefly at the top of the movement, feeling the contraction in your back.\n' +
+          '• Inhale and slowly lower the barbell back to the starting position with control.\n' +
+          '• Aim for 3 sets of 8-10 repetitions.',
+        img: require('../../assets/images/Back/bent_over_row.jpg'),
+      },
+      {
+        id: 1,
+        title: 'Pull ups',
+        selected: false,
+        description:
+          '• Standard Pull-Ups:\n' +
+          '• Grab the pull-up bar with an overhand grip, hands slightly wider than shoulder-width apart.\n' +
+          '• Hang from the bar with your arms fully extended, and your core engaged.\n' +
+          '• Exhale and pull your body up towards the bar by engaging your back muscles and squeezing your shoulder blades together.\n' +
+          '• Aim to bring your chin above the bar.\n' +
+          '• Pause briefly at the top of the movement, then inhale and lower your body back down with control.\n' +
+          '• Aim for 3 sets of as many repetitions as possible (AMRAP) with good form.',
+        img: require('../../assets/images/Back/pull_ups.jpg'),
+      },
+      {
+        id: 2,
+        title: 'Seated cable rows',
+        selected: false,
+        description:
+          '• Set up the cable machine with the seated row attachment at an appropriate height.\n' +
+          '• Sit on the bench or platform, placing your feet on the footrests and grasping the handles with an overhand grip.\n' +
+          '• Maintain an upright posture with your chest lifted and your back straight.\n' +
+          '• Start with your arms extended in front of you and your shoulders slightly protracted.\n' +
+          '• Exhale and pull the handles towards your midsection, retracting your shoulder blades and squeezing your back muscles.\n' +
+          '• Pause briefly at the fully contracted position, feeling the tension in your back.\n' +
+          '• Inhale and slowly extend your arms back to the starting position, maintaining control.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Back/seated_cable_row.jpg'),
+      },
+      {
+        id: 3,
+        title: 'Back extension',
+        selected: false,
+        description:
+          '• Set up the back extension bench or position the stability ball against a wall.\n' +
+          '• Lie face down on the bench or place your stomach on the stability ball, with your hips and lower body supported.\n' +
+          '• Cross your arms over your chest or place your hands behind your head.\n' +
+          '• Engage your core and glutes to stabilize your body.\n' +
+          '• Exhale and lift your upper body off the bench or stability ball, focusing on using your lower back muscles.\n' +
+          '• Avoid excessive hyperextension of your spine and maintain control throughout the movement.\n' +
+          '• Inhale and slowly lower your upper body back down to the starting position.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Back/back-extension.jpg'),
+      },
+      {
+        id: 4,
+        title: 'T-bar rows',
+        selected: false,
+        description:
+          '• Set up the T-bar row machine or secure one end of the barbell in a corner or landmine attachment.\n' +
+          '• Place a barbell in the open end of the T-bar row machine or secure it in the landmine attachment.\n' +
+          '• Stand over the barbell with your feet shoulder-width apart and your knees slightly bent.\n' +
+          '• Bend at the hips, maintaining a flat back and a neutral spine, and grip the handles with an overhand grip.\n' +
+          '• Keep your chest lifted and your shoulders retracted throughout the movement.\n' +
+          '• Exhale and pull the barbell towards your abdomen by retracting your shoulder blades and squeezing your back muscles.\n' +
+          '• Pause briefly at the top of the movement, feeling the contraction in your back.\n' +
+          '• Inhale and slowly lower the barbell back down to the starting position, maintaining control.\n' +
+          '• Aim for 3 sets of 8-10 repetitions.',
+        img: require('../../assets/images/Back/t-bar-row.jpg'),
+      },
+    ],
+  },
+
+  {
+    id: 2,
+    title: 'Chest',
+    img: require('../../assets/icons/chest.png'),
+    exercises: [
+      {
+        id: 0,
+        title: 'Push-ups',
+        selected: false,
+        description:
+          '• Start in a high plank position with your hands slightly wider than shoulder-width apart, fingers pointing forward, and your body in a straight line from head to toe.\n' +
+          '• Engage your core, glutes, and legs to maintain a stable position throughout the movement.\n' +
+          '• Exhale and lower your body by bending your elbows, keeping them close to your sides. Lower yourself until your chest is just above the ground.\n' +
+          '• Pause briefly at the bottom position, then inhale and push through your hands to extend your elbows and return to the starting position.\n' +
+          '• Aim for 3 sets of as many repetitions as possible (AMRAP) with good form.',
+        img: require('../../assets/images/Chest/push-ups.jpg'),
+      },
+      {
+        id: 1,
+        title: 'Bench press',
+        selected: false,
+        description:
+          '• Set up the barbell on the bench press rack at an appropriate height. Lie down on the bench with your feet flat on the ground, and your back, shoulders, and glutes in contact with the bench.\n' +
+          '• Grasp the barbell with an overhand grip slightly wider than shoulder-width apart. Lift the barbell off the rack, straighten your arms, and hold it above your chest with your elbows fully extended.\n' +
+          '• Inhale and slowly lower the barbell towards your chest, keeping your elbows at a 45-degree angle to your body.\n' +
+          '• Pause briefly when the barbell touches your chest, then exhale and push the barbell back up to the starting position by extending your arms.\n' +
+          '• Aim for 3 sets of 8-10 repetitions.',
+        img: require('../../assets/images/Chest/bench-press.jpg'),
+      },
+      {
+        id: 2,
+        title: 'Dumbbell bench press',
+        selected: false,
+        description:
+          '• Set up a bench in a flat position. Sit on the bench with a dumbbell in each hand, resting them on your thighs.\n' +
+          '• Lie back on the bench and position the dumbbells at shoulder level, palms facing forward. Use your thighs to help raise the dumbbells to the starting position.\n' +
+          '• Inhale and lower the dumbbells towards your chest, keeping your elbows at a 45-degree angle to your body. Aim to lower the dumbbells to a point where your upper arms are parallel to the ground or slightly below.\n' +
+          '• Pause briefly when the dumbbells are near your chest, then exhale and push the dumbbells back up to the starting position by extending your arms.\n' +
+          '• Aim for 3 sets of 8-10 repetitions.',
+        img: require('../../assets/images/Chest/dumbbell-bench-press.jpg'),
+      },
+      {
+        id: 3,
+        title: 'Dumbbell fly',
+        selected: false,
+        description:
+          '• Lie on a flat bench with a dumbbell in each hand, arms extended above your chest, and palms facing each other.\n' +
+          '• Keep a slight bend in your elbows throughout the movement.\n' +
+          '• Inhale and open your arms wide, lowering the dumbbells in an arc motion until your arms are parallel to the ground or slightly below.\n' +
+          '• Exhale and squeeze your chest muscles as you reverse the movement, bringing the dumbbells back up to the starting position.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Chest/dumbbell-fly.jpg'),
+      },
+      {
+        id: 4,
+        title: 'Parallel bar dip',
+        selected: false,
+        description:
+          '• Position yourself on parallel bars with your arms fully extended and your body straight.\n' +
+          '• Bend your knees and cross your ankles behind you.\n' +
+          '• Lower your body by bending your elbows, keeping them close to your sides, until your shoulders are slightly below your elbows.\n' +
+          '• Exhale and push through your hands to extend your elbows and return to the starting position.\n' +
+          '• Aim for 3 sets of 8-10 repetitions.',
+        img: require('../../assets/images/Chest/parallel-bar-dip.jpg'),
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    title: 'Quadriceps',
+    img: require('../../assets/icons/quadricep.png'),
+    exercises: [
+      {
+        id: 0,
+        title: 'Squat',
+        selected: false,
+        description:
+          '• Stand with your feet shoulder-width apart and your toes slightly turned out.\n' +
+          '• Engage your core and keep your chest lifted throughout the movement.\n' +
+          "• Inhale and bend your knees, lowering your hips down and back as if you're sitting into a chair. Keep your weight on your heels.\n" +
+          '• Lower yourself until your thighs are parallel to the ground or slightly below, ensuring your knees stay in line with your toes.\n' +
+          '• Exhale and push through your heels to extend your knees and hips, returning to the starting position.\n' +
+          '• Aim for 3 sets of 8-10 repetitions.',
+        img: require('../../assets/images/Quadriceps/squat.jpg'),
+      },
+      {
+        id: 1,
+        title: 'Goblet squat',
+        selected: false,
+        description:
+          '• Hold a dumbbell vertically in front of your chest, with both hands cupping the dumbbell head.\n' +
+          '• Stand with your feet shoulder-width apart and your toes slightly turned out.\n' +
+          '• Engage your core and keep your chest lifted throughout the movement.\n' +
+          "• Inhale and bend your knees, lowering your hips down and back as if you're sitting into a chair. Keep your weight on your heels.\n" +
+          '• Lower yourself until your thighs are parallel to the ground or slightly below, ensuring your knees stay in line with your toes.\n' +
+          '• Exhale and push through your heels to extend your knees and hips, returning to the starting position.\n' +
+          '• Aim for 3 sets of 8-10 repetitions.',
+        img: require('../../assets/images/Quadriceps/dumbbell-goblet-squat.webp'),
+      },
+      {
+        id: 2,
+        title: 'Step ups',
+        selected: false,
+        description:
+          '• Stand in front of a step or elevated platform.\n' +
+          '• Step onto the platform with one foot, driving through your heel to lift your body up.\n' +
+          '• Bring your other foot up onto the platform, fully extending your hip and knee.\n' +
+          '• Step back down with the same foot, followed by the other foot.\n' +
+          '• Repeat the movement, alternating the leading foot.\n' +
+          '• Aim for 3 sets of 10-12 repetitions on each leg.',
+        img: require('../../assets/images/Quadriceps/step-up.webp'),
+      },
+      {
+        id: 3,
+        title: 'Weighted sissy squat',
+        selected: false,
+        description:
+          '• Position yourself in a sissy squat machine or stand with your feet shoulder-width apart and your toes slightly turned out.\n' +
+          '• Hold a weight plate or dumbbell against your chest with both hands.\n' +
+          '• Lean back slightly and keep your chest lifted throughout the movement.\n' +
+          '• Inhale and bend your knees, allowing your heels to lift off the ground as you lower your body.\n' +
+          '• Lower yourself until your thighs are parallel to the ground or slightly below, keeping your knees in line with your toes.\n' +
+          '• Exhale and push through your heels to extend your knees and return to the starting position.\n' +
+          '• Aim for 3 sets of 8-10 repetitions.',
+        img: require('../../assets/images/Quadriceps/weighted-sissy-squat.png'),
+      },
+      {
+        id: 4,
+        title: 'Side lunge',
+        selected: false,
+        description:
+          '• Stand with your feet shoulder-width apart.\n' +
+          '• Take a wide step to the side with your right foot, keeping your toes pointing forward.\n' +
+          '• Shift your body weight to your right foot and bend your right knee, lowering your body down.\n' +
+          '• Keep your left leg straight and your left foot flat on the ground.\n' +
+          '• Push through your right heel to return to the starting position.\n' +
+          '• Repeat the movement on the other side, stepping to the left.\n' +
+          '• Aim for 3 sets of 10-12 repetitions on each leg.',
+        img: require('../../assets/images/Quadriceps/side-lunge.jpg'),
+      },
+    ],
+  },
+
+  {
+    id: 4,
+    title: 'Calf',
+    img: require('../../assets/icons/calf.png'),
+    exercises: [
+      {
+        id: 0,
+        title: 'Calf press',
+        selected: false,
+        description:
+          '• Sit on a calf press machine with your feet resting on the platform and your knees bent at a 90-degree angle.\n' +
+          '• Place the balls of your feet on the edge of the platform, allowing your heels to hang off.\n' +
+          '• Unrack the weight and extend your knees, raising your heels as high as possible.\n' +
+          '• Pause briefly at the top of the movement, squeezing your calf muscles.\n' +
+          '• Slowly lower your heels back down, feeling a stretch in your calves.\n' +
+          '• Aim for 3 sets of 12-15 repetitions.',
+        img: require('../../assets/images/Calf/Calf-Press.jpg'),
+      },
+      {
+        id: 1,
+        title: 'Machine calf raise',
+        selected: false,
+        description:
+          '• Sit on a machine calf raise with your knees bent and your feet resting on the footpad.\n' +
+          '• Place your toes on the footpad, allowing your heels to hang off.\n' +
+          '• Release the safety lever and extend your ankles, raising your heels as high as possible.\n' +
+          '• Pause briefly at the top of the movement, squeezing your calf muscles.\n' +
+          '• Slowly lower your heels back down, feeling a stretch in your calves.\n' +
+          '• Aim for 3 sets of 12-15 repetitions.',
+        img: require('../../assets/images/Calf/machine-calf-raise.jpg'),
+      },
+      {
+        id: 2,
+        title: 'Seated calf raise',
+        selected: false,
+        description:
+          '• Sit on a seated calf raise machine with your feet resting on the platform and your knees bent at a 90-degree angle.\n' +
+          '• Place the balls of your feet on the edge of the platform, allowing your heels to hang off.\n' +
+          '• Release the weight and extend your ankles, raising your heels as high as possible.\n' +
+          '• Pause briefly at the top of the movement, squeezing your calf muscles.\n' +
+          '• Slowly lower your heels back down, feeling a stretch in your calves.\n' +
+          '• Aim for 3 sets of 12-15 repetitions.',
+        img: require('../../assets/images/Calf/seated-calf-raise.jpg'),
+      },
+      {
+        id: 3,
+        title: 'Single leg seated calf raise',
+        selected: false,
+        description:
+          '• Sit on a seated calf raise machine with one foot resting on the platform and your knee bent at a 90-degree angle.\n' +
+          '• Place the ball of your foot on the edge of the platform, allowing your heel to hang off.\n' +
+          '• Release the weight and extend your ankle, raising your heel as high as possible.\n' +
+          '• Pause briefly at the top of the movement, squeezing your calf muscle.\n' +
+          '• Slowly lower your heel back down, feeling a stretch in your calf.\n' +
+          '• Repeat the movement on the other leg.\n' +
+          '• Aim for 3 sets of 12-15 repetitions on each leg.',
+        img: require('../../assets/images/Calf/single-leg-seated-calf-raise.jpg'),
+      },
+    ],
+  },
+
+  {
+    id: 5,
+    title: 'Shoulders',
+    img: require('../../assets/icons/shoulder.png'),
+    exercises: [
+      {
+        id: 0,
+        title: 'Lateral raise',
+        selected: false,
+        description:
+          '• Stand with your feet shoulder-width apart and hold a dumbbell in each hand by your sides.\n' +
+          '• Keeping your arms straight and maintaining a slight bend in your elbows, lift the dumbbells out to the sides until they reach shoulder level.\n' +
+          '• Pause briefly at the top of the movement, focusing on contracting your shoulder muscles.\n' +
+          '• Slowly lower the dumbbells back down to the starting position.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Shoulders/dumbbell-lateral-raise.jpg'),
+      },
+      {
+        id: 1,
+        title: 'Arnold press',
+        selected: false,
+        description:
+          '• Sit on a bench with a backrest and hold a dumbbell in each hand at shoulder level, palms facing your body.\n' +
+          '• Start with your elbows bent and palms facing your body.\n' +
+          '• Press the dumbbells up overhead while rotating your palms to face forward.\n' +
+          '• Pause briefly at the top of the movement, squeezing your shoulder muscles.\n' +
+          '• Lower the dumbbells back down to the starting position, rotating your palms back to the starting position.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Shoulders/arnold-press.jpg'),
+      },
+      {
+        id: 2,
+        title: 'Seated military shoulder press',
+        selected: false,
+        description:
+          '• Sit on a military press bench with a backrest and hold a dumbbell in each hand at shoulder level, palms facing forward.\n' +
+          '• Start with your elbows bent at a 90-degree angle.\n' +
+          '• Press the dumbbells up overhead until your arms are fully extended.\n' +
+          '• Pause briefly at the top of the movement, squeezing your shoulder muscles.\n' +
+          '• Lower the dumbbells back down to the starting position with control.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Shoulders/Seated-military-shoulder-press.png'),
+      },
+      {
+        id: 3,
+        title: 'External rotation',
+        selected: false,
+        description:
+          '• Stand with your feet shoulder-width apart and hold a dumbbell in each hand by your sides.\n' +
+          '• Bend your elbows at a 90-degree angle and keep them tucked into your sides.\n' +
+          '• Rotate your forearms outward, away from your body, while keeping your upper arms stationary.\n' +
+          '• Pause briefly at the end of the movement, feeling a contraction in your shoulder muscles.\n' +
+          '• Slowly rotate your forearms back to the starting position.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Shoulders/dumbbell-external-rotation.jpg'),
+      },
+      {
+        id: 4,
+        title: 'Machine lateral raise',
+        selected: false,
+        description:
+          '• Sit on a lateral raise machine with your feet flat on the floor and your back against the backrest.\n' +
+          "• Place your arms on the machine's pads, keeping your elbows slightly bent.\n" +
+          '• Push against the pads and raise your arms out to the sides until they are parallel to the floor.\n' +
+          '• Pause briefly at the top of the movement, focusing on contracting your shoulder muscles.\n' +
+          '• Slowly lower your arms back down to the starting position with control.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Shoulders/machine-lateral-raise.jpg'),
+      },
+    ],
+  },
+
+  {
+    id: 6,
+    title: 'Triceps',
+    img: require('../../assets/icons/triceps.png'),
+    exercises: [
+      {
+        id: 0,
+        title: 'Diamond push ups',
+        selected: false,
+        description:
+          '• Start in a push-up position with your hands close together, forming a diamond shape with your index fingers and thumbs.\n' +
+          '• Keep your body in a straight line from head to heels.\n' +
+          '• Lower your chest towards the ground, bending your elbows and keeping them close to your sides.\n' +
+          '• Push yourself back up to the starting position, fully extending your arms.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Triceps/diamond-push-ups.jpg'),
+      },
+      {
+        id: 1,
+        title: 'Dumbbell triceps extensions',
+        selected: false,
+        description:
+          '• Stand with your feet shoulder-width apart and hold a dumbbell in each hand.\n' +
+          '• Raise the dumbbells overhead, fully extending your arms.\n' +
+          '• Keep your upper arms close to your head and perpendicular to the floor.\n' +
+          '• Bend your elbows, lowering the dumbbells behind your head.\n' +
+          '• Pause briefly at the bottom of the movement, feeling a stretch in your triceps.\n' +
+          '• Straighten your arms and raise the dumbbells back to the starting position.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Triceps/dumbbell-tricep-extension.jpg'),
+      },
+      {
+        id: 2,
+        title: 'Lying dumbbell triceps',
+        selected: false,
+        description:
+          '• Lie flat on a bench with a dumbbell in each hand, palms facing each other.\n' +
+          '• Extend your arms straight up above your chest, keeping a slight bend in your elbows.\n' +
+          '• Lower the dumbbells towards your head by bending your elbows.\n' +
+          '• Pause briefly at the bottom of the movement, feeling a stretch in your triceps.\n' +
+          '• Extend your arms and raise the dumbbells back to the starting position.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Triceps/lying-dumbbell-tricep.jpg'),
+      },
+      {
+        id: 3,
+        title: 'Lying triceps extension',
+        selected: false,
+        description:
+          '• Lie flat on a bench with a barbell or EZ bar in your hands, palms facing up.\n' +
+          '• Extend your arms straight up above your chest, holding the barbell or EZ bar.\n' +
+          '• Bend your elbows, lowering the barbell or EZ bar towards your forehead.\n' +
+          '• Pause briefly at the bottom of the movement, feeling a stretch in your triceps.\n' +
+          '• Extend your arms and raise the barbell or EZ bar back to the starting position.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Triceps/lying-tricep-extension.jpg'),
+      },
+      {
+        id: 4,
+        title: 'Seated dumbbell triceps extension',
+        selected: false,
+        description:
+          '• Sit on a bench with a dumbbell in each hand, palms facing in.\n' +
+          '• Bring the dumbbells up to shoulder level, bending your elbows.\n' +
+          '• Extend your arms straight up above your head, fully extending your elbows.\n' +
+          '• Lower the dumbbells behind your head by bending your elbows.\n' +
+          '• Pause briefly at the bottom of the movement, feeling a stretch in your triceps.\n' +
+          '• Extend your arms and raise the dumbbells back to the starting position.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/Triceps/seated-dumbbell-tricep-extension.jpg'),
+      },
+    ],
+  },
+
+  {
+    id: 7,
+    title: 'ABS',
+    img: require('../../assets/icons/abs.png'),
+    exercises: [
+      {
+        id: 0,
+        title: 'Crunches',
+        selected: false,
+        description:
+          '• Lie on your back with your knees bent and feet flat on the ground.\n' +
+          '• Place your hands behind your head, with your elbows pointing outwards.\n' +
+          '• Engage your core muscles and lift your upper body towards your knees, using your abdominal muscles.\n' +
+          '• Keep your neck relaxed and avoid pulling on your head with your hands.\n' +
+          '• Slowly lower your upper body back to the starting position.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/ABS/crunches.jpg'),
+      },
+      {
+        id: 1,
+        title: 'Bicycle crunch',
+        selected: false,
+        description:
+          '• Lie on your back with your knees bent and feet lifted off the ground.\n' +
+          '• Place your hands behind your head, with your elbows pointing outwards.\n' +
+          '• Lift your upper body off the ground and bring your right elbow towards your left knee while straightening your right leg.\n' +
+          '• Return to the starting position and repeat on the other side, bringing your left elbow towards your right knee while straightening your left leg.\n' +
+          '• Continue alternating sides in a pedaling motion.\n' +
+          '• Aim for 3 sets of 10-12 repetitions on each side.',
+        img: require('../../assets/images/ABS/bicycle-crunch.jpg'),
+      },
+      {
+        id: 2,
+        title: 'Cable crunch',
+        selected: false,
+        description:
+          '• Attach a rope handle to a high pulley of a cable machine.\n' +
+          '• Kneel down in front of the cable machine and hold the rope with both hands, placing your hands on the sides of your head.\n' +
+          '• Keep your hips stationary and bend at the waist, curling your torso towards the floor.\n' +
+          '• Exhale and contract your abdominal muscles as you curl forward.\n' +
+          '• Pause briefly at the bottom of the movement and squeeze your abs.\n' +
+          '• Inhale and slowly return to the starting position, keeping tension on your abs.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/ABS/cable-crunch.jpg'),
+      },
+      {
+        id: 3,
+        title: 'Decline crunch',
+        selected: false,
+        description:
+          '• Set up a decline bench at a slight angle.\n' +
+          '• Lie down on the decline bench and secure your feet.\n' +
+          '• Place your hands behind your head or across your chest.\n' +
+          '• Engage your core muscles and lift your upper body towards your knees, using your abdominal muscles.\n' +
+          '• Keep your neck relaxed and avoid pulling on your head with your hands.\n' +
+          '• Slowly lower your upper body back to the starting position.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/ABS/decline-crunch.jpg'),
+      },
+      {
+        id: 4,
+        title: 'Reverse crunches',
+        selected: false,
+        description:
+          '• Lie on your back with your arms by your sides and your palms facing down.\n' +
+          '• Lift your legs off the ground and bend your knees, bringing them towards your chest.\n' +
+          '• Use your abdominal muscles to lift your hips off the ground and towards your chest.\n' +
+          '• Pause briefly at the top of the movement, squeezing your abs.\n' +
+          '• Slowly lower your hips back to the starting position.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/ABS/reverse-crunches.jpg'),
+      },
+      {
+        id: 5,
+        title: 'Machine seated crunch',
+        selected: false,
+        description:
+          '• Adjust the seat height on the machine according to your comfort.\n' +
+          '• Sit on the machine with your back against the backrest and your feet flat on the footrests.\n' +
+          '• Place your hands on the handles or the sides of the seat.\n' +
+          '• Exhale and contract your abdominal muscles to curl your torso forward, bringing your chest towards your knees.\n' +
+          '• Pause briefly at the top of the movement, squeezing your abs.\n' +
+          '• Inhale and slowly return to the starting position, maintaining control.\n' +
+          '• Aim for 3 sets of 10-12 repetitions.',
+        img: require('../../assets/images/ABS/machine-seated-crunch.jpg'),
+      },
+    ],
+  },
+];
