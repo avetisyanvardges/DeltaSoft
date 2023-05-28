@@ -345,6 +345,144 @@ export const questions = [
   },
 ];
 
+export const piratesQuestions = [
+  {
+    question:
+      '1. What is the name of the most famous pirate flag, featuring a skull and crossbones?',
+    options: [
+      'Jolly Roger',
+      'Black Skull',
+      'Skull and Bones',
+      "Pirate's Crest",
+    ],
+    answer: 'Jolly Roger',
+  },
+  {
+    question: "2. Which pirate is known for saying, 'Arrr!'?",
+    options: [
+      'Captain Blackbeard',
+      'Captain Hook',
+      'Captain Jack Sparrow',
+      'Captain Kidd',
+    ],
+    answer: 'Captain Jack Sparrow',
+  },
+  {
+    question:
+      '3. What was the name of the pirate who had a peg leg, a hook hand, and an eyepatch?',
+    options: ['Black Bart', 'Redbeard', 'One-Eyed Pete', 'Long John Silver'],
+    answer: 'Long John Silver',
+  },
+  {
+    question:
+      '4. Who was the notorious female pirate that terrorized the Caribbean in the early 18th century?',
+    options: ['Mary Read', "Grace O'Malley", 'Anne Bonny', 'Ching Shih'],
+    answer: 'Anne Bonny',
+  },
+  {
+    question: '5. Which pirate ship was captained by Blackbeard?',
+    options: [
+      'The Revenge',
+      'The Black Pearl',
+      'The Flying Dutchman',
+      "Queen Anne's Revenge",
+    ],
+    answer: "Queen Anne's Revenge",
+  },
+  {
+    question:
+      '6. What is the name of the famous pirate who was born in Wales and operated in the West Indies?',
+    options: ['Henry Morgan', 'William Kidd', 'Samuel Bellamy', 'Edward Teach'],
+    answer: 'Henry Morgan',
+  },
+  {
+    question:
+      '7. What is the name of the island in the Caribbean that was a famous pirate stronghold?',
+    options: ['Port Royal', 'Treasure Island', 'Skull Island', 'Tortuga'],
+    answer: 'Tortuga',
+  },
+  {
+    question:
+      '8. Which pirate was known for his association with the pirate code and articles?',
+    options: ['Calico Jack', 'Black Bart', 'Bartholomew Roberts', 'Edward Low'],
+    answer: 'Bartholomew Roberts',
+  },
+  {
+    question: "9. Which pirate was nicknamed 'Calico Jack'?",
+    options: ['John Rackham', 'Edward Teach', 'Henry Avery', 'Samuel Bellamy'],
+    answer: 'John Rackham',
+  },
+  {
+    question: "10. Who was the pirate known as the 'Gentleman Pirate'?",
+    options: ['Henry Morgan', 'Stede Bonnet', 'Jean Lafitte', 'Black Sam'],
+    answer: 'Stede Bonnet',
+  },
+  {
+    question:
+      "11. Which pirate was known for his treasure-laden flagship, the 'Fancy'?",
+    options: ['William Kidd', 'Edward Low', 'Henry Avery', 'Black Bart'],
+    answer: 'Henry Avery',
+  },
+  {
+    question:
+      '12. Which pirate was notorious for raiding the Spanish Main in the late 17th century?',
+    options: [
+      'Samuel Bellamy',
+      'Bartholomew Roberts',
+      'Captain Kidd',
+      'Jean Lafitte',
+    ],
+    answer: 'Captain Kidd',
+  },
+  {
+    question:
+      '13. What is the term for the act of plundering a ship by pirates?',
+    options: ['Seafaring', 'Piracy', 'Plundering', 'Marauding'],
+    answer: 'Piracy',
+  },
+  {
+    question:
+      "14. Who was the pirate known for his association with the 'Golden Age of Piracy'?",
+    options: ['Edward Low', 'Calico Jack', 'Henry Morgan', 'Blackbeard'],
+    answer: 'Blackbeard',
+  },
+  {
+    question:
+      "15. Which pirate's treasure has yet to be discovered and is rumored to be hidden on Oak Island?",
+    options: ['Anne Bonny', 'Samuel Bellamy', 'Henry Avery', 'Captain Kidd'],
+    answer: 'Captain Kidd',
+  },
+  {
+    question: "16. What is the term for a pirate's hidden stash of treasure?",
+    options: ['Booty', 'Plunder', 'Loot', 'Bounty'],
+    answer: 'Booty',
+  },
+  {
+    question:
+      '17. Which pirate was known for his use of a wooden leg and a parrot companion?',
+    options: ['Blackbeard', 'Calico Jack', 'Captain Hook', 'Peg Leg Pete'],
+    answer: 'Blackbeard',
+  },
+  {
+    question:
+      '18. What was the name of the pirate who was once an enslaved African and later became a feared pirate captain?',
+    options: ['Black Caesar', 'Redbeard', 'Iron Anne', 'Madame Cheng'],
+    answer: 'Black Caesar',
+  },
+  {
+    question:
+      "19. Which pirate was known for his practice of 'walking the plank' as a form of punishment?",
+    options: ['Black Bart', 'William Kidd', 'Edward Teach', 'Captain Hook'],
+    answer: 'Black Bart',
+  },
+  {
+    question:
+      '20. What is the name of the pirate who is said to have buried treasure on the fictional Treasure Island?',
+    options: ['Long John Silver', 'Captain Flint', 'Black Sam', 'Jean Lafitte'],
+    answer: 'Captain Flint',
+  },
+];
+
 export const Muscle = [
   {
     id: 0,

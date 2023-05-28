@@ -1,4 +1,4 @@
-package pickssport.train;
+package slotmagie.win.app;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

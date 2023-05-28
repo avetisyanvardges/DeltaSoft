@@ -17,7 +17,7 @@ const Main = () => {
   return loader ? (
     <View style={styles.loaderContainer}>
       <Image
-        source={require('../assets/7k.png')}
+        source={require('../assets/magie.png')}
         style={{width: Sizes(100), height: Sizes(100)}}
       />
     </View>

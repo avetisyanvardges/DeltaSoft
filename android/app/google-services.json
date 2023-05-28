@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "70377629462",
-    "project_id": "sevex-e1bf0",
-    "storage_bucket": "sevex-e1bf0.appspot.com"
+    "project_number": "528777670534",
+    "project_id": "sltmagnikdm",
+    "storage_bucket": "sltmagnikdm.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:70377629462:android:c470266d37fc773ccc9237",
+        "mobilesdk_app_id": "1:528777670534:android:cbe2ff92c52ff63ae30607",
         "android_client_info": {
-          "package_name": "pickssport.train"
+          "package_name": "slotmagie.win.app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "70377629462-uk9flouuqvodfjeun4pm3fftgcl045bj.apps.googleusercontent.com",
+          "client_id": "528777670534-haenrdoei1nnbdu314sagkaspjep4v9u.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyARVyDGWNYC3xX1isNb5myxAGvOlbuIApo"
+          "current_key": "AIzaSyAR7r6eJYOHA0HlAzLRE6DLGRfcPguNiUs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "70377629462-uk9flouuqvodfjeun4pm3fftgcl045bj.apps.googleusercontent.com",
+              "client_id": "528777670534-haenrdoei1nnbdu314sagkaspjep4v9u.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
